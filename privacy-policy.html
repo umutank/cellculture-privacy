@@ -14,7 +14,7 @@
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <p class="date">Last updated: 06/04/2026</p>
+    <p class="date">Last updated: 11/04/2026</p>
 
     <h2>Overview</h2>
     <p>Cell Culture and Lab Assistant ("the App") is developed by Umut Tank. Your privacy is important to us. This policy explains how we handle your data.</p>
@@ -23,13 +23,13 @@
     <p><strong>We do not collect any personal data.</strong> The App does not collect, store, transmit, or share any personal information, usage data, or analytics.</p>
 
     <h2>Data Storage</h2>
-    <p>All data you enter in the App (cultures, experiments, calculations, timers, cell line information, reagents, plate layouts, notebook entries) is stored <strong>locally on your device</strong>. If iCloud is enabled, data is also backed up to your personal iCloud account (see iCloud section below). No data is sent to any third-party server or service.</p>
+    <p>All data you enter in the App (cultures, experiments, calculations, timers, cell line information, reagents, virus stocks, frozen vial inventory, lab equipment, equipment maintenance records, plate layouts, notebook entries) is stored <strong>locally on your device</strong>. If iCloud Backup is enabled, data is also included in your standard iCloud device backup (see iCloud Backup section below). No data is sent to any third-party server or service.</p>
 
     <h2>Apple Watch</h2>
     <p>If you use the companion Apple Watch app, timer data is transferred between your iPhone and Apple Watch using Apple's WatchConnectivity framework. This data stays on your devices and is not sent to any server. Timer state is cached on the Apple Watch so timers display correctly between sessions; this cached data is limited to timer names and durations.</p>
 
     <h2>iCloud Backup</h2>
-    <p>If you have iCloud enabled on your device, your app data is automatically backed up to your personal iCloud account when changes are made. This data is stored in your private iCloud container and the developer has no access to it. You can manage or delete this data in Settings > [your name] > iCloud > Manage Account Storage.</p>
+    <p>All app data is stored locally on your device. If you have iCloud Backup enabled in your iOS Settings, your app data is included in your standard iCloud device backup alongside other app data on your device. There is no active cross-device sync; your data does not transfer automatically between devices. The developer has no access to your iCloud backups. You can manage iCloud Backup in Settings > [your name] > iCloud > iCloud Backup.</p>
 
     <h2>Third-Party Services</h2>
     <p>The App does not integrate with any third-party analytics, advertising, or tracking services.</p>
@@ -37,14 +37,19 @@
     <h2>Camera and Photos</h2>
     <p>The App may request access to your camera to take photos of experiments, gels, and plates for your lab notebook. Photos are stored locally on your device and backed up to iCloud if enabled. Photos are never sent to any server or third party.</p>
 
+    <h2>Microphone and Speech Recognition</h2>
+    <p>The App offers a voice-to-text feature that lets you dictate lab notes hands-free (for example, while wearing gloves at the bench). When you tap the Voice Note button, the App accesses your device's microphone and uses Apple's on-device speech recognition to convert your speech into text.</p>
+    <p><strong>All speech processing happens entirely on your device.</strong> No audio recordings or transcriptions are sent to any server, the developer, or any third party. The App uses Apple's <code>SFSpeechRecognizer</code> with on-device recognition enforced. Audio buffers are processed in real-time and discarded immediately after transcription. No audio is stored, saved, or retained by the App.</p>
+    <p>The App will request your permission to access the microphone and speech recognition the first time you use the voice feature. You can revoke these permissions at any time in Settings > Cell Culture and Lab Assistant. The voice feature is entirely optional; the App works fully without it.</p>
+
     <h2>Siri and Shortcuts</h2>
-    <p>The App provides Siri integration for starting lab timers. Timer names and durations provided via Siri are processed by Apple according to Apple's privacy policy. No data is sent to the developer through Siri.</p>
+    <p>The App provides Siri Shortcuts integration, allowing you to start lab timers using voice commands or the Shortcuts app. Timer names, durations, and completion status may be shared with Siri to enable this functionality. No data is sent to external servers. All Siri data is processed by Apple according to Apple's privacy policy.</p>
 
     <h2>Search and Widgets</h2>
     <p>The App indexes your items (culture names, experiment titles, reagent names, etc.) in the system search index (Spotlight) so you can find them from your home screen. The App also shares limited data (timer status, task counts) with its home screen widgets. All of this data remains on your device and is not transmitted externally.</p>
 
     <h2>Internet Access</h2>
-    <p>The App does not require an internet connection and does not make any app-initiated network requests. iCloud backup synchronization and App Store review prompts are handled by the operating system.</p>
+    <p>The App works fully offline. iCloud Backup and App Store review prompts are handled by the operating system and only occur when an internet connection is available. The App does not make any network requests to the developer's servers or any third party.</p>
 
     <h2>Children's Privacy</h2>
     <p>The App does not knowingly collect any information from children under 13.</p>
