@@ -10,57 +10,81 @@
         h2 { color: #333; font-size: 18px; margin-top: 30px; }
         p { margin: 10px 0; }
         .date { color: #666; font-size: 14px; }
+        .highlight { background: #f0f7f0; padding: 12px 16px; border-left: 3px solid #3a7d3a; border-radius: 4px; margin: 16px 0; }
     </style>
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <p class="date">Last updated: 11/04/2026</p>
+    <p class="date">Last updated: 17/04/2026</p>
 
-    <h2>Overview</h2>
-    <p>Cell Culture and Lab Assistant ("the App") is developed by Umut Tank. Your privacy is important to us. This policy explains how we handle your data.</p>
+    <div class="highlight">
+        <p><strong>Summary:</strong> Cell Culture and Lab Assistant ("the App") does not collect, receive, transmit, or store any personal data on any server. All data you enter stays on your device. No analytics. No tracking. No accounts. No third-party services. No internet requests to the developer.</p>
+    </div>
 
-    <h2>Data Collection</h2>
-    <p><strong>We do not collect any personal data.</strong> The App does not collect, store, transmit, or share any personal information, usage data, or analytics.</p>
+    <h2>Scope of This Policy</h2>
+    <p>This policy describes what happens to data when you use the App. Because the App has no server component and performs no network requests for data collection, the scope of data processing by the App is limited to your own device.</p>
 
-    <h2>Data Storage</h2>
-    <p>All data you enter in the App (cultures, experiments, calculations, timers, cell line information, reagents, virus stocks, frozen vial inventory, lab equipment, equipment maintenance records, plate layouts, notebook entries) is stored <strong>locally on your device</strong>. If iCloud Backup is enabled, data is also included in your standard iCloud device backup (see iCloud Backup section below). No data is sent to any third-party server or service.</p>
+    <h2>No Data Collection</h2>
+    <p>The App does not collect, access, or transmit any personal data. Specifically:</p>
+    <ul>
+        <li>No user accounts or registration.</li>
+        <li>No analytics, telemetry, crash reporting, or usage metrics.</li>
+        <li>No third-party SDKs, advertising networks, or tracking services.</li>
+        <li>No network requests are made by the App for the purpose of collecting, transmitting, or receiving personal data.</li>
+    </ul>
+    <p>The App Store privacy label for this App is "Data Not Collected", which reflects the App's actual behavior.</p>
 
-    <h2>Apple Watch</h2>
-    <p>If you use the companion Apple Watch app, timer data is transferred between your iPhone and Apple Watch using Apple's WatchConnectivity framework. This data stays on your devices and is not sent to any server. Timer state is cached on the Apple Watch so timers display correctly between sessions; this cached data is limited to timer names and durations.</p>
+    <h2>Data You Enter</h2>
+    <p>Any information you enter into the App (cultures, experiments, calculator inputs, timers, cell line information, reagents, virus stocks, frozen vials, lab equipment, maintenance records, plate layouts, notebook entries, voice transcriptions, and photos) is stored locally on your device in Apple's standard on-device storage. This data is under your control at all times. You can delete it at any time via Settings > Data & Backup > Delete All Data, or by uninstalling the App.</p>
 
-    <h2>iCloud Backup</h2>
-    <p>All app data is stored locally on your device. If you have iCloud Backup enabled in your iOS Settings, your app data is included in your standard iCloud device backup alongside other app data on your device. There is no active cross-device sync; your data does not transfer automatically between devices. The developer has no access to your iCloud backups. You can manage iCloud Backup in Settings > [your name] > iCloud > iCloud Backup.</p>
-
-    <h2>Third-Party Services</h2>
-    <p>The App does not integrate with any third-party analytics, advertising, or tracking services.</p>
+    <h2>iCloud Device Backup</h2>
+    <p>If you have enabled iCloud Backup in your iOS Settings, your App data is included in your iPhone's standard iCloud device backup, alongside all other app data on your device. This is a feature of iOS, provided by Apple, not by this App. The App does not actively sync data between devices. Your iCloud backup is stored in your own iCloud storage under your Apple ID. Apple's privacy policy and iCloud terms govern that backup. The developer of this App has no access to your iCloud backups.</p>
+    <p>You can manage iCloud Backup in Settings > [your name] > iCloud > iCloud Backup on your device.</p>
 
     <h2>Camera and Photos</h2>
-    <p>The App may request access to your camera to take photos of experiments, gels, and plates for your lab notebook. Photos are stored locally on your device and backed up to iCloud if enabled. Photos are never sent to any server or third party.</p>
+    <p>When you choose to attach a photo to an experiment or notebook entry, the App requests access to your camera and/or photo library through iOS. Photos you capture or import are stored locally on your device in the App's sandboxed storage. Photos are never transmitted to any server or third party. If iCloud Backup is enabled, photos are included in that device backup as described above.</p>
 
     <h2>Microphone and Speech Recognition</h2>
-    <p>The App offers a voice-to-text feature that lets you dictate lab notes hands-free (for example, while wearing gloves at the bench). When you tap the Voice Note button, the App accesses your device's microphone and uses Apple's on-device speech recognition to convert your speech into text.</p>
-    <p><strong>All speech processing happens entirely on your device.</strong> No audio recordings or transcriptions are sent to any server, the developer, or any third party. The App uses Apple's <code>SFSpeechRecognizer</code> with on-device recognition enforced. Audio buffers are processed in real-time and discarded immediately after transcription. No audio is stored, saved, or retained by the App.</p>
-    <p>The App will request your permission to access the microphone and speech recognition the first time you use the voice feature. You can revoke these permissions at any time in Settings > Cell Culture and Lab Assistant. The voice feature is entirely optional; the App works fully without it.</p>
+    <p>The App provides an optional voice-to-text feature to dictate lab notes hands-free (for example, while wearing gloves at the bench). When you activate this feature, the App uses your device's microphone and Apple's <strong>on-device</strong> speech recognition (<code>SFSpeechRecognizer</code> with <code>requiresOnDeviceRecognition = true</code>).</p>
+    <p>All speech processing happens entirely on your device. No audio recordings or transcriptions are sent to any server, the developer, or any third party. Audio buffers are processed in real time and discarded immediately after transcription. No audio is retained.</p>
+    <p>The App requests microphone and speech recognition permissions the first time you use the voice feature. You can revoke these permissions at any time in the iOS Settings app. The voice feature is entirely optional; the App functions fully without it.</p>
+
+    <h2>Apple Watch</h2>
+    <p>If you use the companion Apple Watch app, timer data (timer names and durations) is transferred between your iPhone and Apple Watch using Apple's WatchConnectivity framework. This data stays on your devices and is not sent to any server. Timer state is cached on the Apple Watch so it displays correctly between sessions.</p>
 
     <h2>Siri and Shortcuts</h2>
-    <p>The App provides Siri Shortcuts integration, allowing you to start lab timers using voice commands or the Shortcuts app. Timer names, durations, and completion status may be shared with Siri to enable this functionality. No data is sent to external servers. All Siri data is processed by Apple according to Apple's privacy policy.</p>
+    <p>The App provides Siri Shortcuts integration for starting lab timers by voice. When you use this feature, timer names, durations, and completion status may be shared with Siri to enable this functionality. Siri data is processed by Apple according to Apple's privacy policy. No data is sent to the developer.</p>
 
     <h2>Search and Widgets</h2>
-    <p>The App indexes your items (culture names, experiment titles, reagent names, etc.) in the system search index (Spotlight) so you can find them from your home screen. The App also shares limited data (timer status, task counts) with its home screen widgets. All of this data remains on your device and is not transmitted externally.</p>
+    <p>The App indexes your items (culture names, experiment titles, reagent names, calculator names) in the system search index (Spotlight) so you can find them from your home screen. The App also shares limited state (timer status, today's task counts) with its home-screen widgets and Live Activities. All of this data remains on your device and is not transmitted externally.</p>
 
-    <h2>Internet Access</h2>
-    <p>The App works fully offline. iCloud Backup and App Store review prompts are handled by the operating system and only occur when an internet connection is available. The App does not make any network requests to the developer's servers or any third party.</p>
+    <h2>No Internet Requests</h2>
+    <p>The App operates fully offline. It does not make network requests for data collection, analytics, or remote configuration. The only outbound actions are standard iOS operations: (a) App Store review prompts, handled by iOS, (b) opening the Privacy Policy and Terms of Use in your browser when you tap the corresponding links in Settings, (c) iCloud Backup, handled by iOS. None of these send your App data to the developer.</p>
 
     <h2>Children's Privacy</h2>
-    <p>The App does not knowingly collect any information from children under 13.</p>
+    <p>The App is intended for use by adult laboratory professionals in a research context. The App does not knowingly collect information from any user. In particular, because no data is collected at all, no data from children under 13 (US/COPPA) or under 16 (EU) is collected.</p>
 
     <h2>Data Retention</h2>
-    <p>All app data is stored locally on your device. Uninstalling the app permanently deletes all local data. If iCloud backup was enabled, your data remains in your personal iCloud storage until you manually delete it from Settings > [your name] > iCloud > Manage Storage. The developer has no ability to access, retain, or recover any of your data.</p>
+    <p>All App data is stored locally on your device. It is retained for as long as you keep the App installed. Uninstalling the App removes all local App data from your device. If iCloud Backup was enabled, the backup copy remains in your personal iCloud storage until you remove it manually in iCloud settings (Settings > [your name] > iCloud > Manage Storage). The developer has no ability to access, retain, or recover any of your data.</p>
 
-    <h2>Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated date.</p>
+    <h2>Your Rights</h2>
+    <p>Because the App does not collect or store any personal data on any server, there is no server-side personal data to access, correct, export, or delete. You retain complete control over your data through your device:</p>
+    <ul>
+        <li><strong>Access and portability:</strong> Settings > Data & Backup > Export Backup (CSV) exports all your App data in a standard, machine-readable format.</li>
+        <li><strong>Rectification:</strong> Edit any item directly in the App.</li>
+        <li><strong>Erasure:</strong> Delete individual items, or use Settings > Data & Backup > Delete All Data to remove everything at once. Uninstalling the App also removes all local data.</li>
+        <li><strong>Restriction and objection:</strong> Revoke any permission (camera, microphone, notifications) in iOS Settings at any time.</li>
+    </ul>
+    <p>Residents of the EU, UK, California, and other jurisdictions with comparable data protection laws have additional statutory rights regarding personal data. Because this App does not collect, receive, or process any personal data, those rights are satisfied by your direct control of your device and the functions listed above.</p>
+
+    <h2>Provider Identification</h2>
+    <p>For the identity and postal address of the provider responsible for this App, see the <a href="impressum.html">Impressum</a>. This satisfies the identification requirement under GDPR Article 13(1)(a) and § 5 DDG.</p>
 
     <h2>Contact</h2>
-    <p>If you have questions about this Privacy Policy, contact us at: <a href="mailto:fervour-rambles-9b@icloud.com">fervour-rambles-9b@icloud.com</a></p>
+    <p>For questions about this Privacy Policy or about the App, you can write to: <a href="mailto:fervour-rambles-9b@icloud.com">fervour-rambles-9b@icloud.com</a>. This is an Apple iCloud "Hide My Email" alias that forwards to the developer and does not reveal a personal email address.</p>
+    <p>If you contact the developer by email, the content of your message and your email address are processed solely to respond to your inquiry. Correspondence is not used for marketing and is not shared with third parties. Emails are retained only as long as necessary to respond to your inquiry and to handle reasonable follow-up, typically not longer than 12 months.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>This Privacy Policy may be updated from time to time. Material changes will be reflected on this page with an updated date at the top. Continued use of the App after an update constitutes acknowledgment of the revised policy.</p>
 </body>
 </html>
