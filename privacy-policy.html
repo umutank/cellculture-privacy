@@ -15,7 +15,7 @@
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <p class="date">Last updated: 26/04/2026</p>
+    <p class="date">Last updated: 27/04/2026</p>
 
     <div class="highlight">
         <p><strong>Summary:</strong> Cell Culture and Lab Assistant ("the App") does not collect, receive, transmit, or store any personal data on any server. All data you enter stays on your device. No analytics. No tracking. No accounts. No third-party services. No internet requests to the developer.</p>
@@ -35,7 +35,7 @@
     <p>The App Store privacy label for this App is "Data Not Collected", which reflects the App's actual behavior.</p>
 
     <h2>Data You Enter</h2>
-    <p>Any information you enter into the App (cultures, experiments, experiment templates, checklist steps, tasks, calculator inputs, timers, cell line information, reagents, reagent lots, virus stocks, frozen vials, lab equipment, maintenance records, plate layouts, notebook entries, voice transcriptions, and photos) is stored locally on your device in Apple's standard on-device storage. This data is under your control at all times. You can delete it at any time via Settings > Data & Backup > Delete All Data, or by uninstalling the App.</p>
+    <p>Any information you enter into the App (cultures, experiments, experiment templates, checklist steps, tasks, calculator inputs, timers, cell line information, reagents, reagent lots, virus stocks, frozen vials, freezer items including antibodies, plasmids, lysates, nucleic acids, primers, siRNA, bacterial stocks, tissue, serum, proteins, peptides, buffers, and other lab supplies, storage container layouts (Tank/Rack/Box hierarchy and box geometry), expiry policy rules, lab identity (display name and lab name), barcode strings, lab equipment, maintenance records, plate layouts, notebook entries, voice transcriptions, and photos) is stored locally on your device in Apple's standard on-device storage. This data is under your control at all times. You can delete it at any time via Settings > Data & Backup > Delete All Data, or by uninstalling the App.</p>
 
     <h2>iCloud Device Backup</h2>
     <p>If you have enabled iCloud Backup in your iOS Settings, your App data is included in your iPhone's standard iCloud device backup, alongside all other app data on your device. This is a feature of iOS, provided by Apple, not by this App. The App does not actively sync data between devices. Your iCloud backup is stored in your own iCloud storage under your Apple ID. Apple's privacy policy and iCloud terms govern that backup. The developer of this App has no access to your iCloud backups.</p>
@@ -43,6 +43,7 @@
 
     <h2>Camera and Photos</h2>
     <p>When you choose to attach a photo to an experiment or notebook entry, the App requests access to your camera and/or photo library through iOS. Photos you capture or import are stored locally on your device in the App's sandboxed storage. Photos are never transmitted to any server or third party. If iCloud Backup is enabled, photos are included in that device backup as described above.</p>
+    <p>The App also uses your camera to scan barcodes on freezer items and lab supplies (Freezer Inventory > Scan to Find, and the optional barcode field on the Add Freezer Item form). All barcode recognition runs entirely on your device through Apple's <strong>VisionKit</strong> framework. No camera frames or barcode images are saved, retained, or transmitted; the App receives only the decoded barcode text string and discards the underlying video buffer immediately.</p>
 
     <h2>Microphone and Speech Recognition</h2>
     <p>The App provides an optional voice-to-text feature to dictate lab notes hands-free (for example, while wearing gloves at the bench). When you activate this feature, the App uses your device's microphone and Apple's <strong>on-device</strong> speech recognition (<code>SFSpeechRecognizer</code> with <code>requiresOnDeviceRecognition = true</code>).</p>
@@ -56,7 +57,7 @@
     <p>The App provides Siri Shortcuts integration for starting lab timers by voice. When you use this feature, timer names, durations, and completion status may be shared with Siri to enable this functionality. Siri data is processed by Apple according to Apple's privacy policy. No data is sent to the developer.</p>
 
     <h2>Search and Widgets</h2>
-    <p>The App indexes your items (culture names, experiment titles, reagent names, equipment names, virus stock names, frozen vial labels, plate layout names, protocol names, cell line names, and notebook entry titles and previews) in the system search index (Spotlight) so you can find them from your home screen. The App also shares limited state (timer status, today's task counts, active culture alert counts) with its Home Screen widgets, Lock Screen widgets, Live Activities, the expanded Dynamic Island, and (on iOS 18) a Control Center "Lab Timer" button. The App and its watch-face complication share their on-device cached state through an Apple App Group (a sandbox-shared storage area available only to this App and its own extensions on your device). All of this data remains on your device and is not transmitted externally.</p>
+    <p>The App indexes your items (culture names, experiment titles, reagent names, equipment names, virus stock names, frozen vial labels, plate layout names, protocol names, cell line names, notebook entry titles and previews, and freezer item names, types, lot numbers, barcode strings, and type-specific details) in the system search index (Spotlight) so you can find them from your home screen. The App also shares limited state (timer status, today's task counts, active culture alert counts) with its Home Screen widgets, Lock Screen widgets, Live Activities, the expanded Dynamic Island, and (on iOS 18) a Control Center "Lab Timer" button. The App and its watch-face complication share their on-device cached state through an Apple App Group (a sandbox-shared storage area available only to this App and its own extensions on your device). All of this data remains on your device and is not transmitted externally.</p>
 
     <h2>No Internet Requests</h2>
     <p>The App operates fully offline. It does not make network requests for data collection, analytics, or remote configuration. The only outbound actions are standard iOS operations: (a) App Store review prompts, handled by iOS, (b) opening the Privacy Policy and Terms of Use in your browser when you tap the corresponding links in Settings, (c) iCloud Backup, handled by iOS. None of these send your App data to the developer.</p>
