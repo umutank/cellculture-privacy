@@ -15,7 +15,7 @@
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <p class="date">Last updated: 27/04/2026</p>
+    <p class="date">Last updated: 02/05/2026</p>
 
     <div class="highlight">
         <p><strong>Summary:</strong> Cell Culture and Lab Assistant ("the App") does not collect, receive, transmit, or store any personal data on any server. All data you enter stays on your device. No analytics. No tracking. No accounts. No third-party services. No internet requests to the developer.</p>
@@ -51,10 +51,10 @@
     <p>The App requests microphone and speech recognition permissions the first time you use the voice feature. You can revoke these permissions at any time in the iOS Settings app. The voice feature is entirely optional; the App functions fully without it.</p>
 
     <h2>Apple Watch</h2>
-    <p>If you use the companion Apple Watch app, timer data (timer names and durations) is transferred between your iPhone and Apple Watch using Apple's WatchConnectivity framework. This data stays on your devices and is not sent to any server. Timer state is cached on the Apple Watch so it displays correctly between sessions. The optional "Lab Timer" watch-face complication reads this on-device cached snapshot to render the countdown; it does not send or receive any additional data.</p>
+    <p>If you use the companion Apple Watch app, timer data (timer names and durations) and today's task data (task titles, due times, priorities, and completion status, scoped to today's overdue and due-today tasks) are transferred between your iPhone and Apple Watch using Apple's WatchConnectivity framework. Tap-to-complete actions performed on the Watch are sent back to the iPhone via the same framework so the underlying task is updated. This data stays on your devices and is not sent to any server. Timer and task state is cached on the Apple Watch so it displays correctly between sessions. The optional "Lab Timer" watch-face complication reads this on-device cached snapshot to render the countdown; it does not send or receive any additional data.</p>
 
     <h2>Siri and Shortcuts</h2>
-    <p>The App provides Siri Shortcuts integration for starting lab timers by voice. When you use this feature, timer names, durations, and completion status may be shared with Siri to enable this functionality. Siri data is processed by Apple according to Apple's privacy policy. No data is sent to the developer.</p>
+    <p>The App provides Siri Shortcuts integration for hands-free bench actions: starting, stopping, and finishing lab timers by voice; logging a culture observation; logging a feed event on a culture; and asking Siri for an overdue equipment status summary. When you use these features, the relevant inputs (timer names and durations, observation text, culture names, equipment names, and completion / overdue status) may be shared with Siri to enable the functionality. Siri data is processed by Apple according to Apple's privacy policy. No data is sent to the developer. All Siri-driven actions act only on the data already stored locally on your device.</p>
 
     <h2>Search and Widgets</h2>
     <p>The App indexes your items (culture names, experiment titles, reagent names, equipment names, virus stock names, frozen vial labels, plate layout names, protocol names, cell line names, notebook entry titles and previews, and freezer item names, types, lot numbers, barcode strings, and type-specific details) in the system search index (Spotlight) so you can find them from your home screen. The App also shares limited state (timer status, today's task counts, active culture alert counts) with its Home Screen widgets, Lock Screen widgets, Live Activities, the expanded Dynamic Island, and (on iOS 18) a Control Center "Lab Timer" button. The App and its watch-face complication share their on-device cached state through an Apple App Group (a sandbox-shared storage area available only to this App and its own extensions on your device). All of this data remains on your device and is not transmitted externally.</p>
